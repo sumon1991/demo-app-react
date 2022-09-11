@@ -2,9 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Car from './welcome.js'
 import reportWebVitals from './reportWebVitals';
 
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car />);
 // const element = <h1>Hello, world!</h1>;
 
 // const name = 'Josh Perez';
@@ -60,7 +63,7 @@ function tick() {
       <h2>It is {new Date().toLocaleTimeString()}.</h2>
     </div>
   );
-  root.render(element);
+  // root.render(element);
 }
 setInterval(tick, 1000);
 
